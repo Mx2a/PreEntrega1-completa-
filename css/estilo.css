@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@200;400;700&display=swap');
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.backgroundHeader{
+    background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/Background\ Inicio.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:20% 45%;
+    height: 70vh;
+}
+.contenedorLogoNav {
+    margin-top: 3%;
+    margin-left: 3%;
+    width: 20vh;
+    display:inline-block
+}
+.logoNav {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 4rem;
+}
+.nav {
+    display: inline-block;
+    text-align: right;
+    width: 77%;
+}
+.listaNav {
+    display:inline-block;
+    list-style: none;
+    padding-left: 0.9rem;
+}
+.linkNav {
+    text-decoration: none;
+    color:#FFF2F3;
+    font-size: 1.9rem;
+    text-align: right;
+    font-family: "Poppins";
+}
+.titulo{
+    text-align: center;
+    font-size: 8rem;
+    color: #FFF2F3;
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    padding-top: 10vh;
+
+}
+.subtitulo{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #FFF2F3;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+.backgroundMain {
+    background-color:#FFF2F3;
+}   
+.img1Index {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 5rem;
+    border: 0.4rem solid #6b041e;
+}
+.img2Index {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 5rem;
+    border: 0.4rem solid #6b041e;
+}
+.imagenesMain{
+    display: inline-block;
+    margin-top: 5vh;
+    margin-left: 5vh;
+}
+.divMain{
+    display: inline-block;
+    width: 95vh;
+    padding-bottom: 10vh;
+    line-height: 2rem;
+}
+.h3{
+    text-align: justify;
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+.parrafos{
+    text-align: justify;
+    font-size: 1rem;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+.video{
+    width: 20rem;
+    height: 40rem;
+    border-radius: 1rem;
+    border: 0.2rem solid #6b041e;
+    margin: 7rem 3rem 7rem 3rem;
+}
+.backgroundFooter {
+    background-color:#6b041e;
+    height: 15vh;
+}
+.divFooter {
+    text-align: center;
+    padding-top: 1.2rem;
+}
+.icon{
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+.iconLink {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.copyRight {
+    color: #FFF2F3;
+    text-align: center;
+}
+.backgroundHeaderServicios {
+    background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/Background\ Servicios.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+.backgroundHeaderGaleria {
+    background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/Background\ Galeria.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+}
+.backgroundHeaderSobremi {
+    background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/Background\ sobre\ mi.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+}
+.backgroundHeaderContacto {
+    background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/Background\ Contacto.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+}
