@@ -5,70 +5,143 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AyNails</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/estilo.css">
         <link rel="shortcut icon" href="Favicon.ico.png">
         <script src="https://kit.fontawesome.com/b6291c6266.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="backgroundHeader">
-            <div class="contenedorLogoNav">
-                <a href="#"><img class="logoNav" src="./assets/img/Logo.jpeg" alt="Logo AyNails"></a>
-            </div> 
-            <nav class="nav">
-                <ul>
-                    <li class="listaNav"><a class="linkNav" href="#">Inicio</a></li>
-                    <li class="listaNav"><a class="linkNav" href="./pages/servicios.html">Servicios</a></li>
-                    <li class="listaNav"><a class="linkNav" href="./pages/galeria.html">Galería</a></li>
-                    <li class="listaNav"><a class="linkNav" href="./pages/sobre mi.html">Sobre mí</a></li>
-                    <li class="listaNav"><a class="linkNav" href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>    
-            <div>
+        <header class="backgroundHeader"> 
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid px-5 pt-4">
+                    <a class="navbar-brand" href="#">
+                        <img class="logoNav" src="./assets/img/Logo.jpeg" alt="Logo Aynails">
+                    </a>
+                    <button class="navbar-toggler menuHamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link linkNav" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link linkNav" href="./pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link linkNav" href="./pages/galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link linkNav" href="./pages/sobre mi.html">Sobre mí</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link linkNav" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
                 <h1 class="titulo">AyNails</h1>
                 <h2 class="subtitulo">Manicuría profesional</h2>
             </div>
         </header>
-        <main class="backgroundMain">
-            <br>
-            <br>
-            <br>
-            <div class="imagenesMain">
-                <img class="img1Index" src="./assets/img/Imagen 2.jpeg" alt="uñas softgel">
-            </div>
-            <div class="divMain">
-                <h3 class="h3">¿Qué es la manicuría?</h3>
-                <p class="parrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequuntur quibusdam, suscipit odit eum similique, nulla ad soluta accusamus numquam sunt asperiores velit culpa at ex eius facere nesciunt id!</p>
-            </div>
-            <div class="imagenesMain">
-                <img class="img2Index" src="./assets/img/Imagen espacio aynails.jpg" alt="uñas softgel 2">
-            </div>
-            <div class="divMain">
-                <h3 class="h3">¿Qué es AyNails?</h3>
-                <p class="parrafos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit autem, iusto similique veniam natus necessitatibus fugiat facilis laborum asperiores quos beatae sit corrupti ipsa quas? Atque ratione incidunt repellat! Itaque!</p>
-            </div>
-            <div>
-                <video class="video" loop controls><source src="./assets/video/Vid1.mp4" alt="Video1"></video>
-                <video class="video" loop controls><source src="./assets/video/Vid2.mp4" alt="Video2"></video>
-                <video class="video" loop controls><source src="./assets/video/Vid3.mp4" alt="Video3"></video>
-            </div>
+        <main class="backgroundMain px-5 py-5">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-4 py-5">
+                        <img class="imgIndex" src="./assets/img/Imagen 2.jpeg" alt="uñas softgel">
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="h3">¿Qué es la manicuría?</h3>
+                        <p class="parrafos">La manicura es un conjunto de técnicas y procedimientos para el cuidado y embellecimiento de las uñas de las manos.
+                        Entre las técnicas más comunes de manicura se encuentran el limado y pulido de las uñas, el tratamiento de las cutículas, la aplicación de esmalte de uñas y la decoración con diseños y adornos.
+                        El proceso de manicura también puede incluir tratamientos para mejorar la salud y apariencia de las uñas, como la hidratación con cremas especiales, la exfoliación para eliminar células muertas y el fortalecimiento con productos que contienen vitaminas y minerales.
+                        La manicura es una práctica popular en todo el mundo y puede ser una forma efectiva de mejorar la apariencia de las manos y uñas, además de ser una actividad relajante y agradable.</p>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-4 py-5 order-md-2">
+                        <img class="imgIndex" src="./assets/img/Imagen espacio aynails.jpg" alt="espacio AyNails">
+                    </div>
+                    <div class="col-md-8 order-md-1">
+                        <h3 class="h3">¿Qué es AyNails?</h3>
+                        <p class="parrafos"> <strong><em>AyNails</em></strong> es un oasis de belleza dedicado a cuidar tus uñas y ofrecerte una experiencia relajante y rejuvenecedora. Nuestra increible manicurista es experta en una amplia gama de servicios de uñas, desde manicuras y pedicuras básicas hasta tratamientos de spa de lujo con masajes y exfoliantes. Además, nuestro salón cuenta con un ambiente acogedor y elegante, diseñado para ofrecerte una experiencia de primera clase en cada visita. ¡Ven a vernos y déjanos cuidar de tus uñas mientras te relajas y te mimas</p>
+                    </div>
+                </div>
+            </div>   
+            <section class="container-fluid">
+                <h3 class="h3__section">Conocé más sobre AyNails</h3>
+                <div class="row">
+                    <div class="col-sm-4 col-12">
+                        <a href="./pages/servicios.html" class="text-decoration-none text-dark">        
+                            <div class="card shadow-lg p-3 mb-5 bg-body rounded border-0">
+                                <img src="./assets/img/Background servicios - card.jpg" class="card-img-top rounded-3" alt="tarjeta sobre uñas con enlace a la pagina Servicios">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Servicios</h4>
+                                    <p class="card-text"> <strong><em>AyNails</em></strong> ofrece una amplia variedad de servicios de uñas para ayudarte a lucir tus manos y pies de la mejor manera. Además, se utilizan productos de alta calidad y técnicas innovadoras para brindarte un servicio excepcional y duradero.</p>
+                                </div>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="col-sm-4 col-12">
+                        <a href="./pages/sobre mi.html" class="text-decoration-none text-dark">
+                            <div class="card shadow-lg p-3 mb-5 bg-body rounded border-0">
+                                <img src="./assets/img/Background sobre mi - card.jpg" class="card-img-top rounded-3" alt="tarjeta sobre uñas con enlace a la pagina Sobre mi">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Sobre mí</h4>
+                                    <p class="card-text"> Descubre quién esta detrás de <strong><em>AyNails</em></strong>. Ya sea que estés buscando un cambio de imagen completo o simplemente necesites una sesión de mantenimiento rápida, nuestra profesional en manicuria es la elección perfecta para un servicio excepcional y personalizado.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-12">
+                        <a href="./pages/galeria.html" class="text-decoration-none text-dark">
+                            <div class="card shadow-lg p-3 mb-5 bg-body rounded border-0">
+                                <img src="./assets/img/Background Galeria - card.jpeg" class="card-img-top rounded-3" alt="tarjeta sobre uñas con enlace a la pagina Galeria"">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Galeria</h4>
+                                    <p class="card-text"> Nuestra galería presenta una variedad de diseños que han sido cuidadosamente seleccionados para cautivar tus sentidos y despertar tu creatividad. Es el lugar perfecto para dejarte llevar por la belleza de estos trabajos hechos con amor. </p>
+                                </div>
+                            </div>
+                        </a>   
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer class="backgroundFooter">
-            <div class="divFooter">
-                <ul>
-                    <li class="listaNav"><a class="linkNav" href="#">Inicio</a></li>
-                    <li class="listaNav"><a class="linkNav" href="./pages/servicios.html">Servicios</a></li>
-                    <li class="listaNav"><a class="linkNav" href="./pages/galeria.html">Galería</a></li>
-                    <li class="listaNav"><a class="linkNav" href="./pages/sobre mi.html">Sobre mí</a></li>
-                    <li class="listaNav"><a class="linkNav" href="./pages/contacto.html">Contacto</a></li>
-                </ul>
+        <footer class="backgroundFooter container-fluid">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 d-flex justify-content-center align-items-center sizeColumn">
+                        <a class="text-decoration-none" href="#">
+                            <h3 class="hFooter">AyNails</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center sizeColumn">
+                        <ul>
+                            <li class="listaNav"><a class="linkNav text-decoration-none" href="#">Inicio</a></li>
+                            <li class="listaNav"><a class="linkNav text-decoration-none" href="./pages/servicios.html">Servicios</a></li>
+                            <li class="listaNav"><a class="linkNav text-decoration-none" href="./pages/galeria.html">Galería</a></li>
+                            <li class="listaNav"><a class="linkNav text-decoration-none" href="./pages/sobre mi.html">Sobre mí</a></li>
+                            <li class="listaNav"><a class="linkNav text-decoration-none" href="./pages/contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="icon col-md-3 d-flex justify-content-center align-items-center sizeColumn">
+                        <a class="iconLink text-decoration-none px-3" href="https://instagram.com/ay.nailscba?igshid=Mzc1MmZhNjY=" target="_blank"> <i class="fa-brands fa-instagram" style="color: #fff2f3;"></i> </a>                                
+                        <a class="iconLink text-decoration-none px-3" href="https://wa.link/kbdtqy" target="_blank"> <i class="fa-brands fa-whatsapp" style="color: #fff2f3;"></i> </a>               
+                        <a class="iconLink text-decoration-none px-3" href="https://www.facebook.com/profile.php?id=100078387732814&mibextid=LQQJ4d" target="_blank"> <i class="fa-brands fa-facebook" style="color: #fff2f3;"></i> </a>
+                        <a class="iconLink text-decoration-none px-3" href="https://www.tiktok.com/@aynailscba?_t=8asvyu43wQf&_r=1" target="_blank"> <i class="fa-brands fa-tiktok" style="color: #fff2f3;"></i> </a>
+                    </div>
+                </div>   
             </div>
-            <div class="icon">
-                <a class="iconLink" href="https://instagram.com/ay.nailscba?igshid=Mzc1MmZhNjY=" target="_blank"> <i class="fa-brands fa-instagram" style="color: #fff2f3;"></i> </a>                                
-                <a class="iconLink" href="https://wa.link/kbdtqy" target="_blank"> <i class="fa-brands fa-whatsapp" style="color: #fff2f3;"></i> </a>               
-                <a class="iconLink" href="https://www.facebook.com/profile.php?id=100078387732814&mibextid=LQQJ4d" target="_blank"> <i class="fa-brands fa-facebook" style="color: #fff2f3;"></i> </a>
-                <a class="iconLink" href="https://www.tiktok.com/@aynailscba?_t=8asvyu43wQf&_r=1" target="_blank"> <i class="fa-brands fa-tiktok" style="color: #fff2f3;"></i> </a>
-            </div>
-            <p class="copyRight">Todos los derechos reservados - Desarrollado por Miqueas Arce</p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col text-center">
+                        <p class="copyRight">Todos los derechos reservados - Desarrollado por Miqueas Arce</p>
+                    </div>
+                </div>
+            </div>    
         </footer>
+        <script src="./js/bootstrap.bundle.min.js" ></script>
     </body>
 </html>

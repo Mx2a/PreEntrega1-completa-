@@ -5,64 +5,118 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AyNails</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilo.css"">
         <link rel="icon" href="../assets/img/Favicon.png">
         <script src="https://kit.fontawesome.com/b6291c6266.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="backgroundHeaderContacto">
-            <div class="contenedorLogoNav">
-                <a href="../index.html"><img class="logoNav" src="../assets/img/Logo.jpeg" alt="Logo AyNails"></a>
-            </div> 
-            <nav class="nav">
-                <ul>
-                    <li class="listaNav"><a class="linkNav" href="../index.html">Inicio</a></li>
-                    <li class="listaNav"><a class="linkNav" href="./servicios.html"">Servicios</a></li>
-                    <li class="listaNav"><a class="linkNav" href="./galeria.html"">Galería</a></li>
-                    <li class="listaNav"><a class="linkNav" href="./sobre mi.html"">Sobre mí</a></li>
-                    <li class="listaNav"><a class="linkNav" href="#">Contacto</a></li>
-                </ul>
-            </nav>    
-            <div>
+        <header class="backgroundHeaderContacto"> 
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid px-5 pt-4">
+                    <a class="navbar-brand" href="../index.html">
+                        <img class="logoNav" src="../assets/img/Logo.jpeg" alt="Logo Aynails">
+                    </a>
+                    <button class="navbar-toggler menuHamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link linkNav" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link linkNav" href="./servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link linkNav" href="./galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link linkNav" href="./sobre mi.html">Sobre mí</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link linkNav" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
                 <h1 class="titulo">Contacto</h1>
-                <h2 class="subtitulo">Haz tus consultas </h2>
+                <h2 class="subtitulo">Realiza tus consultas</h2>
             </div>
         </header>
         <main class="backgroundMain">
-            <form>
-                <div>
-                    <input type="text" placeholder="Ingrese su nombre" required>
+            <div>
+                <h1 class="mensajeContacto py-5 container-fluid text-center">Gracias por visitar mi sitio web, no olvides dejar tu consulta o mensaje. ¡Te espero!</h1>
+            </div>
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-1">
+                                <label for="exampleFormControlInput1" class="form-label"></label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Completo" required>
+                            </div>
+                            <div class="mb-1">
+                                <label for="exampleFormControlInput1" class="form-label"></label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Dirección de Email" required>
+                            </div>
+                            <div class="mb-1">
+                                <label for="exampleFormControlInput1" class="form-label"></label>
+                                <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Telefono" required>
+                            </div>
+                            <div class="mb-1">
+                                <label for="exampleFormControlTextarea1" class="form-label"></label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" cols="30" rows="6" placeholder="Mensaje..."></textarea>
+                            </div>
+                            <div class="mb-1 d-flex">
+                                <input class="col" type="submit" value="Enviar">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="../assets/img/imagen contacto.jpg" class="rounded-3 border img-fluid">
+                    </div>
                 </div>
-                <div>
-                    <input type="email" placeholder="Ingrese su mail" required>
-                </div>
-                <div>
-                    <textarea cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-            </form>   
-            <img src="../assets/img/Imagen Contacto.jpg">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.941696567915!2d-64.2122286843638!3d-31.41573240336485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432989da9bf19bd%3A0xdad2a0775d9c58f0!2sSol%20de%20Mayo%20509%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1679577071853!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.941696567915!2d-64.2122286843638!3d-31.41573240336485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432989da9bf19bd%3A0xdad2a0775d9c58f0!2sSol%20de%20Mayo%20509%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1679577071853!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="py-5 embed-responsive-item "></iframe>
+                    </div>
+            </div>
         </main>
-        <footer class="backgroundFooter">
-            <div class="divFooter">
-                <ul>
-                    <li class="listaNav"><a class="linkNav" href="../index.html">Inicio</a></li>
-                    <li class="listaNav"><a class="linkNav" href="./servicios.html">Servicios</a></li>
-                    <li class="listaNav"><a class="linkNav" href="./galeria.html">Galería</a></li>
-                    <li class="listaNav"><a class="linkNav" href="./sobre mi.html">Sobre mí</a></li>
-                    <li class="listaNav"><a class="linkNav" href="#">Contacto</a></li>
-                </ul>
+        <footer class="backgroundFooter container-fluid">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 d-flex justify-content-center align-items-center sizeColumn">
+                        <a class="text-decoration-none" href="../index.html">
+                            <h3 class="hFooter">AyNails</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center sizeColumn">
+                        <ul>
+                            <li class="listaNav"><a class="linkNav text-decoration-none" href="../index.html">Inicio</a></li>
+                            <li class="listaNav"><a class="linkNav text-decoration-none" href="./servicios.html">Servicios</a></li>
+                            <li class="listaNav"><a class="linkNav text-decoration-none" href="./galeria.html">Galería</a></li>
+                            <li class="listaNav"><a class="linkNav text-decoration-none" href="./sobre mi.html">Sobre mí</a></li>
+                            <li class="listaNav"><a class="linkNav text-decoration-none" href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="icon col-md-3 d-flex justify-content-center align-items-center sizeColumn">
+                        <a class="iconLink text-decoration-none px-3" href="https://instagram.com/ay.nailscba?igshid=Mzc1MmZhNjY=" target="_blank"> <i class="fa-brands fa-instagram" style="color: #fff2f3;"></i> </a>                                
+                        <a class="iconLink text-decoration-none px-3" href="https://wa.link/kbdtqy" target="_blank"> <i class="fa-brands fa-whatsapp" style="color: #fff2f3;"></i> </a>               
+                        <a class="iconLink text-decoration-none px-3" href="https://www.facebook.com/profile.php?id=100078387732814&mibextid=LQQJ4d" target="_blank"> <i class="fa-brands fa-facebook" style="color: #fff2f3;"></i> </a>
+                        <a class="iconLink text-decoration-none px-3" href="https://www.tiktok.com/@aynailscba?_t=8asvyu43wQf&_r=1" target="_blank"> <i class="fa-brands fa-tiktok" style="color: #fff2f3;"></i> </a>
+                    </div>
+                </div>   
             </div>
-            <div class="icon">
-                <a class="iconLink" href="https://instagram.com/ay.nailscba?igshid=Mzc1MmZhNjY=" target="_blank"> <i class="fa-brands fa-instagram" style="color: #fff2f3;"></i> </a>                                
-                <a class="iconLink" href="https://wa.link/kbdtqy" target="_blank"> <i class="fa-brands fa-whatsapp" style="color: #fff2f3;"></i> </a>               
-                <a class="iconLink" href="https://www.facebook.com/profile.php?id=100078387732814&mibextid=LQQJ4d" target="_blank"> <i class="fa-brands fa-facebook" style="color: #fff2f3;"></i> </a>
-                <a class="iconLink" href="https://www.tiktok.com/@aynailscba?_t=8asvyu43wQf&_r=1" target="_blank"> <i class="fa-brands fa-tiktok" style="color: #fff2f3;"></i> </a>
-            </div>
-                <p class="copyRight">Todos los derechos reservados - Desarrollado por Miqueas Arce</p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col text-center">
+                        <p class="copyRight">Todos los derechos reservados - Desarrollado por Miqueas Arce</p>
+                    </div>
+                </div>
+            </div>    
         </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
