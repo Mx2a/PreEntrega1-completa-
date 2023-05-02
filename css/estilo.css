@@ -1,249 +1,284 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@200;400;700&display=swap');
-* { margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@200;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
-.backgroundHeader{
-    background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-index-arreglo.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center;
-    height: 100vh;
-}
-.contenedorLogoNav {
-    margin-top: 3%;
-    margin-left: 3%;
-    width: 20vh;
-    display:inline-block
-}
-.logoNav {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 4rem;
-}
-.nav {
-    display: inline-block;
-    text-align: right;
-    width: 77%;
-}
-.listaNav {
-    display:inline-block;
-    list-style: none;
-    padding-left: 0.9rem;
-}
-.navbar-light .navbar-nav .linkNav {
-    text-decoration: none;
-    color:#FFF2F3;
-    font-size: 1.9rem;
-    text-align: right;
-    font-family: "Poppins";
-}
-.navbar-light .navbar-toggler-icon {
-    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 242, 243, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-.navbar-light .menuHamburguesa {
-    color: #FFF2F3;
-    border: 1px solid;
-}
-.titulo{
-    text-align: center;
-    font-size: 10rem;
-    color: #FFF2F3;
-    font-family: 'Dancing Script';
-    font-weight: bold;
-    padding-top: 10vh;
 
+.backgroundHeaderIndex {
+  background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-index-arreglo.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
-.subtitulo{
-    text-align: center;
-    font-size: 2rem;
-    color: #FFF2F3;
-    font-family: 'Poppins';
-    font-weight: 400;
+
+.contenedorLogoNav {
+  margin-top: 3%;
+  margin-left: 3%;
+  width: 20vh;
+  display: inline-block;
 }
+
+.logoNav {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 4rem;
+}
+
+.nav {
+  display: inline-block;
+  text-align: right;
+  width: 77%;
+}
+
+.listaNav {
+  display: inline-block;
+  list-style: none;
+  padding-left: 0.9rem;
+}
+
+.navbar-light .navbar-nav .linkNav {
+  text-decoration: none;
+  color: #FFF2F3;
+  font-size: 1.9rem;
+  text-align: right;
+  font-family: "Poppins";
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 242, 243, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .menuHamburguesa {
+  color: #FFF2F3;
+  border: 1px solid;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 10rem;
+  color: #FFF2F3;
+  font-family: "Dancing Script";
+  font-weight: bold;
+  padding-top: 10vh;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 2rem;
+  color: #FFF2F3;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
 .scrolldown {
-    position: absolute;
-    bottom: 20px;
-    left:50%;
-    width: 40px;
-    height: 40px;
-    transform: translateY(-80px) translateX(-50%) rotate(45deg);
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-80px) translateX(-50%) rotate(45deg);
 }
+
 .scrolldown span {
-    position: absolute;
-    top:0;
-    left:0;
-    display:block;
-    width: 100%;
-    height: 100%;
-    border-bottom:2px solid #FFF2F3 ;
-    border-right:2px solid #FFF2F3;
-    animation: animate 1s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #FFF2F3;
+  border-right: 2px solid #FFF2F3;
+  animation: animate 1s linear infinite;
 }
+
 .scrolldown span:nth-child(1) {
-    transform: translate(-15px, -15px);
-    animation-delay: 0.3s;
+  transform: translate(-15px, -15px);
+  animation-delay: 0.3s;
 }
+
 .scrolldown span:nth-child(2) {
-    transform: translate(0px, 0px);
-    animation-delay: 0.1s;
+  transform: translate(0px, 0px);
+  animation-delay: 0.1s;
 }
+
 .scrolldown span:nth-child(3) {
-    transform: translate(15px, 15px);
-    animation-delay: 0s;
+  transform: translate(15px, 15px);
+  animation-delay: 0s;
 }
+
 @keyframes animate {
-    0% {
-        top:-5px;
-        left:-5px;
-        opacity: 0;
-    }
-    25% {
-        top:0px;
-        left:0px;
-        opacity: 1;
-    }
-    50%, 100% {
-        top:5px;
-        left:5px;
-        opacity: 0;
-    }
+  0% {
+    top: -5px;
+    left: -5px;
+    opacity: 0;
+  }
+  25% {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+  50%, 100% {
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+  }
 }
 .backgroundMain {
-    background-color:#FFF2F3;
-}   
+  background-color: #FFF2F3;
+}
+
 .imgIndex {
-    max-width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    border: 0.3rem solid #6b041e;
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  border: 0.3rem solid #6b041e;
 }
+
 .h3 {
-    text-align: justify;
-    font-size: 2.3rem;
-    font-family: 'Poppins';
-    font-weight: 400;
-    line-height: 2rem;
+  text-align: justify;
+  font-size: 2.3rem;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 2rem;
 }
-.parrafos{
-    text-align: justify;
-    font-size: 1.2rem;
-    font-family: 'Poppins';
-    font-weight: 400;
-    line-height: 2rem;
+
+.parrafos {
+  text-align: justify;
+  font-size: 1.2rem;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 2rem;
 }
-.h3__section{
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Poppins';
-    font-weight: 400;
+
+.h3__section {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Poppins";
+  font-weight: 400;
 }
+
 .border {
-    border: 4px solid #6b041e!important;
+  border: 4px solid #6b041e !important;
 }
+
 .backgroundFooter {
-    background-color:#6b041e;
-    height: auto;
+  background-color: #6b041e;
+  height: auto;
 }
+
 .sizeColumn {
-    height: 20vh;
+  height: 20vh;
 }
+
 .divFooter {
-    text-align: center;
+  text-align: center;
 }
+
 .hFooter {
-    color: #FFF2F3;
-    font-size: 5rem;
-    text-align: center;
-    font-family: 'Dancing Script';
-    font-weight: bold;
+  color: #FFF2F3;
+  font-size: 5rem;
+  text-align: center;
+  font-family: "Dancing Script";
+  font-weight: bold;
 }
+
 .listaNav {
-    font-size: 2rem;
+  font-size: 2rem;
 }
+
 .linkNav {
-    color: #FFF2F3;
+  color: #FFF2F3;
 }
-.icon{
-    text-decoration: none;
-    text-align: center;
-    font-size: 2rem;
+
+.icon {
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
 }
+
 .copyRight {
-    color: #FFF2F3;
-    text-align: center;
-    margin-bottom:0;
-    padding: 0;   
+  color: #FFF2F3;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 0;
 }
+
 .backgroundHeaderServicios {
-    background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-servicios-arreglo.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+  background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-servicios-arreglo.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
+
 .backgroundHeaderGaleria {
-    background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/Background\ Galeria.jpeg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+  background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/Background\ Galeria.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
+
 .backgroundHeaderSobremi {
-    background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-sobremi-arreglo.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+  background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-sobremi-arreglo.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
+
 .backgroundHeaderContacto {
-    background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/Background\ Contacto.jpeg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+  background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/Background\ Contacto.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
+
 .mensajeContacto {
-    color: #6b041e;
-    font-family: 'Poppins';
-    font-weight: 400;
+  color: #6b041e;
+  font-family: "Poppins";
+  font-weight: 400;
 }
 
 @media screen and (max-width: 768px) {
-    .backgroundHeader{
-        background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-index-mobile.jpg);
-    }
-    .backgroundHeaderServicios {
-        background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-servicios-mobile.jpg);
-    }
-    .backgroundHeaderSobremi {
-        background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-sobremi-mobile.jpg);
-    }
-    .backgroundHeaderContacto {
-        background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-contacto-mobile.jpg);
-    }
-    .titulo {
-        font-size: 5rem;
-    }
-    .subtitulo{
-        font-size: 1rem;
-    }
+  .backgroundHeaderIndex {
+    background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-index-mobile.jpg);
+  }
+  .backgroundHeaderServicios {
+    background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-servicios-mobile.jpg);
+  }
+  .backgroundHeaderSobremi {
+    background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-sobremi-mobile.jpg);
+  }
+  .backgroundHeaderContacto {
+    background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-contacto-mobile.jpg);
+  }
+  .titulo {
+    font-size: 5rem;
+  }
+  .subtitulo {
+    font-size: 1rem;
+  }
+  .h3 {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+  .parrafos {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .h3__section {
+    font-size: 2rem;
+  }
+}
 
-    .h3 {
-        font-size: 1.3rem;
-        line-height: 1.5rem;
-    }
-    .parrafos{
-        font-size: 0.8rem;
-        line-height: 1rem;
-    }
-    .h3__section {
-        font-size: 2rem;
-    }
-} 
+/*# sourceMappingURL=estilo.css.map */
