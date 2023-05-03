@@ -146,7 +146,7 @@
   border: 0.3rem solid #6b041e;
 }
 .backgroundMain .h3 {
-  text-align: justify;
+  text-align: center;
   font-size: 2.3rem;
   font-family: "Poppins";
   font-weight: 400;
@@ -177,6 +177,39 @@
   }
   .backgroundMain .h3__section {
     font-size: 2rem;
+  }
+}
+.backgroundMainSobremi {
+  background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/background-main-sobremi.jpeg);
+  background-size: cover;
+  border: 1px;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.backgroundMainSobremi .contenedorSobremi {
+  display: flex;
+  width: 95%;
+  height: auto;
+}
+.backgroundMainSobremi .contenedorSobremi p {
+  font-size: 2.5rem;
+  color: #FFF2F3;
+  text-align: justify;
+  line-height: 3rem;
+}
+.backgroundMainSobremi .contenedorSobremi p .destacar {
+  color: #6b041e;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .backgroundMainSobremi .contenedorSobremi p {
+    font-size: 1.3rem;
+    color: #FFF2F3;
+    line-height: 1.3rem;
   }
 }
 .mensajeContacto {

@@ -1,0 +1,37 @@
+.backgroundMainSobremi {
+    background-image:linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/background-main-sobremi.jpeg);
+    background-size: cover;
+    border: 1px;
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    .contenedorSobremi {
+        display: flex;
+        width: 95%;
+        height: auto;
+        p {
+            font-size: 2.5rem;
+            color: $color-rosa;
+            text-align: justify;
+            line-height: 3rem;
+            .destacar {
+                color: $color-bordo;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .backgroundMainSobremi {
+        .contenedorSobremi {
+            p {
+                font-size: 1.3rem;
+                color: $color-rosa;
+                line-height: 1.3rem;
+            }
+        }
+    }
+}
