@@ -1,0 +1,44 @@
+.backgroundMain {
+    background-color: $color-rosa;
+    .imgIndex {
+        max-width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        border: 0.3rem solid $color-bordo;
+    }
+    .h3 {
+        text-align: justify;
+        font-size: 2.3rem;
+        font-family: $fuente-secundaria;
+        font-weight: 400;
+        line-height: 2rem;
+    }
+    .parrafos{
+        text-align: justify;
+        font-size: 1.2rem;
+        font-family: $fuente-secundaria;
+        font-weight: 400;
+        line-height: 2rem;
+    }
+    .h3__section{
+        text-align: center;
+        font-size: 3rem;
+        font-family: $fuente-secundaria;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width: 768px) {
+    .backgroundMain {
+        .h3 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        }
+        .parrafos{
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        }
+        .h3__section {
+        font-size: 2rem;
+        }
+    }    
+}

@@ -1,0 +1,34 @@
+.backgroundFooter {
+    background-color:$color-bordo;
+    height: auto;
+    .sizeColumn {
+        height: 20vh;
+        .hFooter {
+            color: $color-rosa;
+            font-size: 5rem;
+            text-align: center;
+            font-family: $fuente-principal;
+            font-weight: bold;
+        }
+        .listaNav {
+            display:inline-block;
+            list-style: none;
+            padding-left: 0.9rem;
+            font-size: 2rem;
+            .linkNav {
+                color: $color-rosa;
+            }         
+        }
+    }
+    .icon{
+        text-decoration: none;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .copyRight {
+        color: $color-rosa;
+        text-align: center;
+        margin-bottom:0;
+        padding: 0;   
+    }
+}
