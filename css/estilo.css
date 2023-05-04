@@ -18,6 +18,10 @@
   width: 6rem;
   height: 6rem;
   border-radius: 4rem;
+  transition: transform 0.3s ease;
+}
+.backgroundHeaderIndex .navbar-light .logoNav:hover, .backgroundHeaderContacto .navbar-light .logoNav:hover, .backgroundHeaderSobremi .navbar-light .logoNav:hover, .backgroundHeaderGaleria .navbar-light .logoNav:hover, .backgroundHeaderServicios .navbar-light .logoNav:hover {
+  transform: scale(1.2);
 }
 .backgroundHeaderIndex .navbar-light .navbar-toggler-icon, .backgroundHeaderContacto .navbar-light .navbar-toggler-icon, .backgroundHeaderSobremi .navbar-light .navbar-toggler-icon, .backgroundHeaderGaleria .navbar-light .navbar-toggler-icon, .backgroundHeaderServicios .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 242, 243, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -27,11 +31,16 @@
   border: 1px solid;
 }
 .backgroundHeaderIndex .navbar-light .navbar-nav .linkNav, .backgroundHeaderContacto .navbar-light .navbar-nav .linkNav, .backgroundHeaderSobremi .navbar-light .navbar-nav .linkNav, .backgroundHeaderGaleria .navbar-light .navbar-nav .linkNav, .backgroundHeaderServicios .navbar-light .navbar-nav .linkNav {
+  display: flex;
   text-decoration: none;
   color: #FFF2F3;
-  font-size: 1.9rem;
+  font-size: 2rem;
   text-align: right;
   font-family: "Poppins";
+  transition: transform 0.3s ease;
+}
+.backgroundHeaderIndex .navbar-light .navbar-nav .linkNav:hover, .backgroundHeaderContacto .navbar-light .navbar-nav .linkNav:hover, .backgroundHeaderSobremi .navbar-light .navbar-nav .linkNav:hover, .backgroundHeaderGaleria .navbar-light .navbar-nav .linkNav:hover, .backgroundHeaderServicios .navbar-light .navbar-nav .linkNav:hover {
+  transform: scale(1.2);
 }
 .backgroundHeaderIndex .titulo, .backgroundHeaderContacto .titulo, .backgroundHeaderSobremi .titulo, .backgroundHeaderGaleria .titulo, .backgroundHeaderServicios .titulo {
   text-align: center;
@@ -48,7 +57,55 @@
   font-family: "Poppins";
   font-weight: 400;
 }
+.backgroundHeaderIndex .scrolldown, .backgroundHeaderContacto .scrolldown, .backgroundHeaderSobremi .scrolldown, .backgroundHeaderGaleria .scrolldown, .backgroundHeaderServicios .scrolldown {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+.backgroundHeaderIndex .scrolldown span, .backgroundHeaderContacto .scrolldown span, .backgroundHeaderSobremi .scrolldown span, .backgroundHeaderGaleria .scrolldown span, .backgroundHeaderServicios .scrolldown span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #FFF2F3;
+  border-right: 2px solid #FFF2F3;
+  animation: animate 1s linear infinite;
+}
+.backgroundHeaderIndex .scrolldown span:nth-child(1), .backgroundHeaderContacto .scrolldown span:nth-child(1), .backgroundHeaderSobremi .scrolldown span:nth-child(1), .backgroundHeaderGaleria .scrolldown span:nth-child(1), .backgroundHeaderServicios .scrolldown span:nth-child(1) {
+  transform: translate(-15px, -15px);
+  animation-delay: 0.3s;
+}
+.backgroundHeaderIndex .scrolldown span:nth-child(2), .backgroundHeaderContacto .scrolldown span:nth-child(2), .backgroundHeaderSobremi .scrolldown span:nth-child(2), .backgroundHeaderGaleria .scrolldown span:nth-child(2), .backgroundHeaderServicios .scrolldown span:nth-child(2) {
+  transform: translate(0px, 0px);
+  animation-delay: 0.1s;
+}
+.backgroundHeaderIndex .scrolldown span:nth-child(3), .backgroundHeaderContacto .scrolldown span:nth-child(3), .backgroundHeaderSobremi .scrolldown span:nth-child(3), .backgroundHeaderGaleria .scrolldown span:nth-child(3), .backgroundHeaderServicios .scrolldown span:nth-child(3) {
+  transform: translate(15px, 15px);
+  animation-delay: 0s;
+}
 
+@keyframes animate {
+  0% {
+    top: -5px;
+    left: -5px;
+    opacity: 0;
+  }
+  25% {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+  50%, 100% {
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+  }
+}
 .backgroundHeaderServicios {
   background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-servicios-arreglo.jpg);
 }
@@ -75,6 +132,18 @@
   .backgroundHeaderIndex .subtitulo, .backgroundHeaderServicios .subtitulo, .backgroundHeaderGaleria .subtitulo, .backgroundHeaderSobremi .subtitulo, .backgroundHeaderContacto .subtitulo {
     font-size: 1rem;
   }
+  .backgroundHeaderIndex .navbar-light .logoNav, .backgroundHeaderServicios .navbar-light .logoNav, .backgroundHeaderGaleria .navbar-light .logoNav, .backgroundHeaderSobremi .navbar-light .logoNav, .backgroundHeaderContacto .navbar-light .logoNav {
+    transition: none;
+  }
+  .backgroundHeaderIndex .navbar-light .logoNav:hover, .backgroundHeaderServicios .navbar-light .logoNav:hover, .backgroundHeaderGaleria .navbar-light .logoNav:hover, .backgroundHeaderSobremi .navbar-light .logoNav:hover, .backgroundHeaderContacto .navbar-light .logoNav:hover {
+    transform: none;
+  }
+  .backgroundHeaderIndex .navbar-light .navbar-nav .linkNav, .backgroundHeaderServicios .navbar-light .navbar-nav .linkNav, .backgroundHeaderGaleria .navbar-light .navbar-nav .linkNav, .backgroundHeaderSobremi .navbar-light .navbar-nav .linkNav, .backgroundHeaderContacto .navbar-light .navbar-nav .linkNav {
+    transition: none;
+  }
+  .backgroundHeaderIndex .navbar-light .navbar-nav .linkNav:hover, .backgroundHeaderServicios .navbar-light .navbar-nav .linkNav:hover, .backgroundHeaderGaleria .navbar-light .navbar-nav .linkNav:hover, .backgroundHeaderSobremi .navbar-light .navbar-nav .linkNav:hover, .backgroundHeaderContacto .navbar-light .navbar-nav .linkNav:hover {
+    transform: none;
+  }
   .backgroundHeaderServicios {
     background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-servicios-mobile.jpg);
   }
@@ -87,55 +156,10 @@
   .backgroundHeaderContacto {
     background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-contacto-mobile.jpg);
   }
+  .scrolldown {
+    display: none;
+  }
 }
-/*.scrolldown {
-    position: absolute;
-    bottom: 20px;
-    left:50%;
-    width: 40px;
-    height: 40px;
-    transform: translateY(-80px) translateX(-50%) rotate(45deg);
-}
-.scrolldown span {
-    position: absolute;
-    top:0;
-    left:0;
-    display:block;
-    width: 100%;
-    height: 100%;
-    border-bottom:2px solid $color-rosa ;
-    border-right:2px solid $color-rosa;
-    animation: animate 1s linear infinite;
-}
-.scrolldown span:nth-child(1) {
-    transform: translate(-15px, -15px);
-    animation-delay: 0.3s;
-}
-.scrolldown span:nth-child(2) {
-    transform: translate(0px, 0px);
-    animation-delay: 0.1s;
-}
-.scrolldown span:nth-child(3) {
-    transform: translate(15px, 15px);
-    animation-delay: 0s;
-}
-@keyframes animate {
-    0% {
-        top:-5px;
-        left:-5px;
-        opacity: 0;
-    }
-    25% {
-        top:0px;
-        left:0px;
-        opacity: 1;
-    }
-    50%, 100% {
-        top:5px;
-        left:5px;
-        opacity: 0;
-    }
-}*/
 .backgroundMain {
   background-color: #FFF2F3;
 }
@@ -235,15 +259,23 @@
   text-align: center;
   font-family: "Dancing Script";
   font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.backgroundFooter .sizeColumn .hFooter:hover {
+  transform: scale(1.2);
 }
 .backgroundFooter .sizeColumn .listaNav {
   display: inline-block;
   list-style: none;
-  padding-left: 0.9rem;
   font-size: 2rem;
 }
 .backgroundFooter .sizeColumn .listaNav .linkNav {
+  display: flex;
   color: #FFF2F3;
+  transition: transform 0.3s ease;
+}
+.backgroundFooter .sizeColumn .listaNav .linkNav:hover {
+  transform: scale(1.2);
 }
 .backgroundFooter .icon {
   text-decoration: none;
@@ -255,6 +287,21 @@
   text-align: center;
   margin-bottom: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .backgroundFooter .sizeColumn .hFooter {
+    transition: none;
+  }
+  .backgroundFooter .sizeColumn .hFooter:hover {
+    transform: none;
+  }
+  .backgroundFooter .sizeColumn .listaNav .linkNav {
+    transition: none;
+  }
+  .backgroundFooter .sizeColumn .listaNav .linkNav:hover {
+    transform: none;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */

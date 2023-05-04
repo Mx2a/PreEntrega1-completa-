@@ -9,14 +9,22 @@
             text-align: center;
             font-family: $fuente-principal;
             font-weight: bold;
+            transition: transform 0.3s ease;
+                &:hover {
+                    transform: scale(1.2);
+                }
         }
         .listaNav {
             display:inline-block;
             list-style: none;
-            padding-left: 0.9rem;
             font-size: 2rem;
             .linkNav {
+                display: flex;
                 color: $color-rosa;
+                transition: transform 0.3s ease;
+                &:hover {
+                    transform: scale(1.2);
+                }
             }         
         }
     }
@@ -30,5 +38,25 @@
         text-align: center;
         margin-bottom:0;
         padding: 0;   
+    }
+}
+@media screen and (max-width: 768px) {
+    .backgroundFooter {
+        .sizeColumn {
+            .hFooter {
+                transition: none;
+                &:hover {
+                        transform: none;
+                }
+            }
+            .listaNav {
+                .linkNav {
+                    transition: none;
+                    &:hover {
+                        transform: none;
+                    }
+                }
+            }
+        }
     }
 }
