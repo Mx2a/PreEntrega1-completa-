@@ -1,0 +1,6 @@
+@mixin mixintextos ($alineacion, $sizefuente, $familiafuente, $grosorfuente){
+        text-align: $alineacion;
+        font-size: $sizefuente;
+        font-family: $familiafuente;
+        font-weight: $grosorfuente;
+}

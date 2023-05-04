@@ -1,9 +1,9 @@
 .backgroundHeaderIndex{
     background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-index-arreglo.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center;
+    background-attachment:map-get($imagenesbackground,imgfixed);
+    background-size: map-get($imagenesbackground,imgcover);
+    background-repeat: map-get($imagenesbackground,imgnorepeat);
+    background-position:map-get($imagenesbackground,imgcenter);
     height: $vhcompleto;
     .navbar-light {
         .logoNav {
@@ -38,20 +38,14 @@
         }
     }
     .titulo{
-        text-align: $texto-centrado;
-        font-size: 10rem;
+        @include mixintextos($texto-centrado,10rem,$fuente-principal,map-get($anchofont,grueso));
         color: $color-rosa;
-        font-family: $fuente-principal;
-        font-weight: bold;
         padding-top: 10vh;
     
     }
     .subtitulo{
-        text-align: $texto-centrado;
-        font-size: 2rem;
+        @include mixintextos($texto-centrado,2rem,$fuente-secundaria,map-get($anchofont,estandar));
         color: $color-rosa;
-        font-family: $fuente-secundaria;
-        font-weight: 400;
     }
     .scrolldown {
         position: absolute;

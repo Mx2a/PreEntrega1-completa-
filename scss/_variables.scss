@@ -4,3 +4,16 @@ $vhcompleto:100vh;
 $color-rosa:#FFF2F3;
 $color-bordo:#6b041e;
 $texto-centrado: center;
+
+$anchofont:(
+    fino:200,
+    estandar:400,
+    grueso:700
+);
+
+$imagenesbackground:(
+    imgfixed: fixed,
+    imgcover: cover,
+    imgnorepeat: no-repeat,
+    imgcenter: center
+);

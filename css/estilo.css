@@ -45,17 +45,17 @@
 .backgroundHeaderIndex .titulo, .backgroundHeaderContacto .titulo, .backgroundHeaderSobremi .titulo, .backgroundHeaderGaleria .titulo, .backgroundHeaderServicios .titulo {
   text-align: center;
   font-size: 10rem;
-  color: #FFF2F3;
   font-family: "Dancing Script";
-  font-weight: bold;
+  font-weight: 700;
+  color: #FFF2F3;
   padding-top: 10vh;
 }
 .backgroundHeaderIndex .subtitulo, .backgroundHeaderContacto .subtitulo, .backgroundHeaderSobremi .subtitulo, .backgroundHeaderGaleria .subtitulo, .backgroundHeaderServicios .subtitulo {
   text-align: center;
   font-size: 2rem;
-  color: #FFF2F3;
   font-family: "Poppins";
   font-weight: 400;
+  color: #FFF2F3;
 }
 .backgroundHeaderIndex .scrolldown, .backgroundHeaderContacto .scrolldown, .backgroundHeaderSobremi .scrolldown, .backgroundHeaderGaleria .scrolldown, .backgroundHeaderServicios .scrolldown {
   position: absolute;
@@ -226,7 +226,7 @@
 }
 .backgroundMainSobremi .contenedorSobremi p .destacar {
   color: #6b041e;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {
@@ -254,11 +254,11 @@
   height: 20vh;
 }
 .backgroundFooter .sizeColumn .hFooter {
-  color: #FFF2F3;
-  font-size: 5rem;
   text-align: center;
+  font-size: 5rem;
   font-family: "Dancing Script";
-  font-weight: bold;
+  font-weight: 700;
+  color: #FFF2F3;
   transition: transform 0.3s ease;
 }
 .backgroundFooter .sizeColumn .hFooter:hover {
@@ -287,6 +287,7 @@
   text-align: center;
   margin-bottom: 0;
   padding: 0;
+  font-weight: 200;
 }
 
 @media screen and (max-width: 768px) {

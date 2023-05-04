@@ -4,11 +4,8 @@
     .sizeColumn {
         height: 20vh;
         .hFooter {
+            @include mixintextos($texto-centrado,5rem,$fuente-principal,map-get($anchofont,grueso));
             color: $color-rosa;
-            font-size: 5rem;
-            text-align: center;
-            font-family: $fuente-principal;
-            font-weight: bold;
             transition: transform 0.3s ease;
                 &:hover {
                     transform: scale(1.2);
@@ -38,6 +35,7 @@
         text-align: center;
         margin-bottom:0;
         padding: 0;   
+        font-weight: map-get($anchofont , fino);
     }
 }
 @media screen and (max-width: 768px) {

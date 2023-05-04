@@ -1,11 +1,11 @@
 .backgroundMainSobremi {
     background-image:linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/background-main-sobremi.jpeg);
-    background-size: cover;
+    background-size: map-get($imagenesbackground , imgcover);
     border: 1px;
     border-radius: 1rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    background-repeat: map-get($imagenesbackground , imgnorepeat);
+    background-position: map-get($imagenesbackground , imgcenter);
+    background-attachment: map-get($imagenesbackground , imgfixed);
     height: 100vh;
     .contenedorSobremi {
         display: flex;
@@ -18,7 +18,7 @@
             line-height: 3rem;
             .destacar {
                 color: $color-bordo;
-                font-weight: bold;
+                font-weight: map-get($anchofont,grueso);
             }
         }
     }

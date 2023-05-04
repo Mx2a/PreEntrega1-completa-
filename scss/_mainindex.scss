@@ -7,24 +7,15 @@
         border: 0.3rem solid $color-bordo;
     }
     .h3 {
-        text-align: $texto-centrado;
-        font-size: 2.3rem;
-        font-family: $fuente-secundaria;
-        font-weight: 400;
+        @include mixintextos($texto-centrado,2.3rem,$fuente-secundaria,map-get($anchofont,estandar));
         line-height: 2rem;
     }
     .parrafos{
-        text-align: justify;
-        font-size: 1.2rem;
-        font-family: $fuente-secundaria;
-        font-weight: 400;
+        @include mixintextos(justify,1.2rem,$fuente-secundaria,map-get($anchofont,estandar));
         line-height: 2rem;
     }
     .h3__section{
-        text-align: $texto-centrado;
-        font-size: 3rem;
-        font-family: $fuente-secundaria;
-        font-weight: 400;
+        @include mixintextos($texto-centrado,3rem,$fuente-secundaria,map-get($anchofont,estandar));
     }
 }
 @media screen and (max-width: 768px) {
