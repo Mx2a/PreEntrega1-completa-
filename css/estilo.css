@@ -246,6 +246,47 @@
   border: 4px solid #6b041e !important;
 }
 
+.h2galeria {
+  font-family: "Poppins";
+  color: #6b041e;
+  font-size: 2rem;
+}
+
+.separacion {
+  color: #6b041e;
+  border: 1px solid;
+  opacity: 0.8;
+}
+
+.imgcontenedor .imggaleria {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  .h2galeria {
+    font-size: 1.2rem;
+  }
+}
+.h2servicios {
+  font-family: "Poppins";
+  color: #6b041e;
+  font-size: 2rem;
+}
+
+.separacion {
+  color: #6b041e;
+  border: 1px solid;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .h2servicios {
+    font-size: 1.2rem;
+  }
+}
 .backgroundFooter {
   background-color: #6b041e;
   height: auto;
