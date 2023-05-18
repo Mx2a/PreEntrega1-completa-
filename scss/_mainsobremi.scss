@@ -12,12 +12,12 @@
         width: 95%;
         height: auto;
         p {
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: $color-rosa;
             text-align: justify;
-            line-height: 3rem;
+            line-height: 2.8rem;
             .destacar {
-                color: $color-bordo;
+                color: #f6cfd3;
                 font-weight: map-get($anchofont,grueso);
             }
         }
