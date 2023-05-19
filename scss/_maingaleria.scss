@@ -10,7 +10,7 @@
         background-size: map-get($imagenesbackground,imgcover);
         background-repeat: map-get($imagenesbackground,imgnorepeat);
         background-position:map-get($imagenesbackground,imgcenter);
-        border-radius: 3rem;
+        border-radius: 5rem;
         border: 0.4rem solid $color-bordo;
     }
 }

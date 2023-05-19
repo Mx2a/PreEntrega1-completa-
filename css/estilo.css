@@ -121,7 +121,7 @@
   background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/Background\ Contacto.jpeg);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 994px) {
   .backgroundHeaderIndex, .backgroundHeaderServicios, .backgroundHeaderGaleria, .backgroundHeaderSobremi, .backgroundHeaderContacto {
     background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-index-mobile.jpg);
   }
@@ -205,6 +205,9 @@
   font-family: "Poppins";
   font-weight: 400;
 }
+.backgroundMain .cardajuste {
+  height: 95%;
+}
 
 @media screen and (max-width: 768px) {
   .backgroundMain .h3 {
@@ -252,6 +255,36 @@
     line-height: 1.3rem;
   }
 }
+.inputForm {
+  color: #FFF2F3;
+  background-color: #6b041e;
+  font-family: "Poppins";
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #FFF2F3;
+  border-radius: 1rem;
+  resize: vertical;
+  border: none;
+  outline: none;
+}
+.inputForm::placeholder {
+  color: rgba(255, 242, 243, 0.3411764706);
+}
+
+.botonForm {
+  background-color: #6b041e;
+  color: #FFF2F3;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+.botonForm:hover {
+  background-color: #bd0c38;
+}
+
 .border {
   border: 4px solid #6b041e !important;
 }
@@ -267,8 +300,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 3rem;
+  border-radius: 5rem;
   border: 0.4rem solid #6b041e;
+}
+
+.cardajusteS {
+  height: 47%;
 }
 
 .backgroundFooter {
@@ -315,7 +352,7 @@
   font-weight: 200;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 994px) {
   .backgroundFooter .sizeColumn .hFooter {
     transition: none;
   }

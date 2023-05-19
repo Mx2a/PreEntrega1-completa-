@@ -48,37 +48,37 @@
                 <h2 class="subtitulo">Realiza tus consultas</h2>
             </div>
             <div class="scrolldown">
-                <span></span>
-                <span></span>
-                <span></span>
+                <a href="#mainContacto">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
             </div>
         </header>
-        <main class="backgroundMain px-5">
+        <main class="backgroundMain px-5" id="mainContacto">
             <h2 class="h2main py-5 text-center">Gracias por visitar mi sitio web, no olvides dejar tu consulta o mensaje. ¡Te espero!</h2>
             <hr class="separacion mb-5 mx-5">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 py-3">
                         <form>
-                            <div class="mb-1">
-                                <label for="exampleFormControlInput1" class="form-label"></label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Completo" required>
+                            <div>
+                                <label for="name"></label>
+                                <input class="inputForm" type="text" id="name" name="name" placeholder="Nombre completo" required>
                             </div>
-                            <div class="mb-1">
-                                <label for="exampleFormControlInput1" class="form-label"></label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Dirección de Email" required>
+                            <div>
+                                <label for="email"></label>
+                                <input class="inputForm" type="email" id="email" name="email" placeholder="Email" required>
                             </div>
-                            <div class="mb-1">
-                                <label for="exampleFormControlInput1" class="form-label"></label>
-                                <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Telefono" required>
+                            <div>
+                                <label for="tel"></label>
+                                <input class="inputForm" type="tel" id="phone" name="tel" placeholder="Telefono/Celular" required>
                             </div>
-                            <div class="mb-1">
-                                <label for="exampleFormControlTextarea1" class="form-label"></label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" cols="30" rows="6" placeholder="Mensaje..."></textarea>
+                            <div>
+                                <label for="message"></label>
+                                <textarea class="inputForm" id="message" name="message" placeholder="Escriba su mensaje o comentario" rows="8" required></textarea>
                             </div>
-                            <div class="mb-1 d-flex">
-                                <input class="col" type="submit" value="Enviar">
-                            </div>
+                            <button class="botonForm" type="submit">Enviar</button>
                         </form>
                     </div>
                     <div class="col-lg-6 py-3">

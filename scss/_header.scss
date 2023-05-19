@@ -113,7 +113,7 @@
     @extend .backgroundHeaderIndex;
     background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/Background\ Contacto.jpeg);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 994px) {
     .backgroundHeaderIndex{
         background-image: linear-gradient(rgba(6, 9, 7, 0.7), rgba(6, 9, 7, 0.5)), url(../assets/img/img-index-mobile.jpg);
         .titulo {

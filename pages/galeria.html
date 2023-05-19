@@ -48,33 +48,115 @@
                 <h2 class="subtitulo">Observa más trabajos</h2>
             </div>
             <div class="scrolldown">
-                <span></span>
-                <span></span>
-                <span></span>
+                <a href="#mainGaleria">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
             </div>
         </header>
-        <main class="backgroundMain px-5 container-fluid">
+        <main class="backgroundMain px-5 container-fluid" id="mainGaleria">
             <h2 class="py-5 text-center h2main">
                 Explora las últimas tendencias en manicura a través de nuestra fascinante galería de imágenes
             </h2>
             <hr class="separacion mb-5 mx-5">
             <div class="row">
                 <div class="col-lg-4 imgcontenedor px-4">
-                    <img class="imggaleria mb-5 w-100" src="../assets/img/uñas-galeria1.jpg" title="Imagen-galeria1" alt="imagen sobre manicuría">
-                    <img class="imggaleria mb-5 w-100" src="../assets/img/uñas-galeria2.jpeg" title="Imagen-galeria2" alt="imagen sobre manicuría">
-                    <video class="vidgaleria mb-5 w-100" src="../assets/video/Vid1.mp4" controls title="Video-galeria1" alt="video sobre manicuría"></video>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#uñas-galeria1">
+                        <img class="imggaleria mb-5 w-100" src="../assets/img/uñas-galeria1.jpg" title="Imagen-galeria1" alt="imagen sobre manicuría">
+                    </a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#uñas-galeria2">
+                        <img class="imggaleria mb-5 w-100" src="../assets/img/uñas-galeria2.jpeg" title="Imagen-galeria2" alt="imagen sobre manicuría">
+                    </a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#Vid1">
+                        <video class="vidgaleria mb-5 w-100" src="../assets/video/Vid1.mp4" controls title="Video-galeria1" alt="video sobre manicuría"></video>
+                    </a>
                 </div>
                 <div class="col-lg-4 imgcontenedor px-4">
-                    <img class="imggaleria mb-5 w-100" src="../assets/img/uñas-galeria3.jpg" title="Imagen-galeria3" alt="imagen sobre manicuría">
-                    <img class="imggaleria mb-5 w-100" src="../assets/img/uñas-galeria4.jpeg" title="Imagen-galeria4" alt="imagen sobre manicuría">
-                    <video class="vidgaleria mb-5 w-100" src="../assets/video/Vid2.mp4" controls title="Video-galeria2" alt="video sobre manicuría"></video>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#uñas-galeria3">
+                        <img class="imggaleria mb-5 w-100" src="../assets/img/uñas-galeria3.jpg" title="Imagen-galeria3" alt="imagen sobre manicuría">
+                    </a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#uñas-galeria4">
+                        <img class="imggaleria mb-5 w-100" src="../assets/img/uñas-galeria4.jpeg" title="Imagen-galeria4" alt="imagen sobre manicuría">
+                    </a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#Vid2">
+                        <video class="vidgaleria mb-5 w-100" src="../assets/video/Vid2.mp4" controls title="Video-galeria2" alt="video sobre manicuría"></video>
+                    </a>
                 </div>
                 <div class="col-lg-4 imgcontenedor px-4">
-                    <img class="imggaleria mb-5 w-100" src="../assets/img/uñas-galeria5.jpeg" title="Imagen-galeria5" alt="imagen sobre manicuría">
-                    <img class="imggaleria mb-5 w-100" src="../assets/img/uñas-galeria6.jpeg" title="Imagen-galeria6" alt="imagen sobre manicuría">
-                    <video class="vidgaleria mb-5 w-100" src="../assets/video/Vid3.mp4" controls title="Video-galeria3" alt="video sobre manicuría"></video>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#uñas-galeria4">
+                        <img class="imggaleria mb-5 w-100" src="../assets/img/uñas-galeria4.jpeg" title="Imagen-galeria4" alt="imagen sobre manicuría">
+                    </a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#uñas-galeria5">
+                        <img class="imggaleria mb-5 w-100" src="../assets/img/uñas-galeria5.jpeg" title="Imagen-galeria5" alt="imagen sobre manicuría">
+                    </a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#Vid3">
+                        <video class="vidgaleria mb-5 w-100" src="../assets/video/Vid3.mp4" controls title="Video-galeria3" alt="video sobre manicuría"></video>
+                    </a>
                 </div>
-                
+                <div tabindex="-1" aria-labelledby="uñas-galeria1" aria-hidden="true" class="modal fade" id="uñas-galeria1">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <img src="../assets/img/uñas-galeria1.jpg" alt="imagen sobre manicuría">
+                        </div>
+                    </div>
+                </div>
+                <div tabindex="-1" aria-labelledby="uñas-galeria2" aria-hidden="true" class="modal fade" id="uñas-galeria2">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <img src="../assets/img/uñas-galeria2.jpeg" alt="imagen sobre manicuría">
+                        </div>
+                    </div>
+                </div>
+                <div tabindex="-1" aria-labelledby="Vid1" aria-hidden="true" class="modal fade" id="Vid1">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <video src="../assets/video/Vid1.mp4" controls alt="video sobre manicuría">
+                        </div>
+                    </div>
+                </div>
+                <div tabindex="-1" aria-labelledby="uñas-galeria3" aria-hidden="true" class="modal fade" id="uñas-galeria3">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <img src="../assets/img/uñas-galeria3.jpg" alt="imagen sobre manicuría">
+                        </div>
+                    </div>
+                </div>
+                <div tabindex="-1" aria-labelledby="uñas-galeria4" aria-hidden="true" class="modal fade" id="uñas-galeria4">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <img src="../assets/img/uñas-galeria4.jpeg" alt="imagen sobre manicuría">
+                        </div>
+                    </div>
+                </div>
+                <div tabindex="-1" aria-labelledby="Vid2" aria-hidden="true" class="modal fade" id="Vid2">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <video src="../assets/video/Vid2.mp4" controls alt="video sobre manicuría">
+                        </div>
+                    </div>
+                </div>
+                <div tabindex="-1" aria-labelledby="uñas-galeria4" aria-hidden="true" class="modal fade" id="uñas-galeria1">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <img src="../assets/img/uñas-galeria4.jpeg" alt="imagen sobre manicuría">
+                        </div>
+                    </div>
+                </div>
+                <div tabindex="-1" aria-labelledby="uñas-galeria5" aria-hidden="true" class="modal fade" id="uñas-galeria5">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <img src="../assets/img/uñas-galeria5.jpeg" alt="imagen sobre manicuría">
+                        </div>
+                    </div>
+                </div>
+                <div tabindex="-1" aria-labelledby="Vid3" aria-hidden="true" class="modal fade" id="Vid3">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <video src="../assets/video/Vid3.mp4" controls alt="video sobre manicuría">
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <footer class="backgroundFooter container-fluid">

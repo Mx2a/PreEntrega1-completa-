@@ -17,6 +17,9 @@
     .h3__section{
         @include mixintextos($texto-centrado,3rem,$fuente-secundaria,map-get($anchofont,estandar));
     }
+    .cardajuste{
+        height: 95%;
+    }
 }
 @media screen and (max-width: 768px) {
     .backgroundMain {
