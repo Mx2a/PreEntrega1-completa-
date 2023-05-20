@@ -8,8 +8,9 @@
         <meta name="keywords" content="Manicura, uñas, diseño de uñas, cuidado de manos, cuidado de uñas, esmaltado de uñas, belleza de manos, esculpido de uñas, tratamiento de cutículas, pedicura, estética.">
         <title> AyNails | Inicio </title>
         <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="./css/estilo.css">
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="icon" href="./assets/img/Logo.jpeg">
         <script src="https://kit.fontawesome.com/b6291c6266.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -17,7 +18,7 @@
             <nav class="navbar navbar-expand-lg navbar-light ">
                 <div class="container-fluid px-5 pt-4">
                     <a class="navbar-brand" href="#" title="Enlace a página - Inicio"  >
-                        <img class="logoNav" src="./assets/img/Logo.jpeg" title="Logo AyNails" alt="Logo Aynails">
+                        <img class="logoNav" src="./assets/img/Logo1.png" title="Logo AyNails" alt="Logo Aynails">
                     </a>
                     <button class="navbar-toggler menuHamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -55,12 +56,12 @@
                 </a>
             </div>
         </header>
-        <main class="backgroundMain px-5" id="mainIndex">
+        <main class="backgroundMain contenedorAnimaciones px-5" id="mainIndex">
             <h2 class="h2main py-5 text-center">Manicuría de calidad que eleva tu estilo a otro nivel</h2>
             <hr class="separacion mb-5 mx-5">
             <div class="container-fluid">
-                <div class="row align-items-center justify-content-center pb-5">
-                    <div class="col-lg-4 py-5 order-lg-1 order-2">
+                <div class="row align-items-center justify-content-center pb-5"  data-aos="fade-right" data-aos-duration="1000">
+                    <div class="col-lg-4 py-5 order-lg-1 order-2 ">
                         <img class="imgIndex" src="./assets/img/Imagen 2.jpeg" title="Imagen uñas" alt="uñas softgel">
                     </div>
                     <div class="col-lg-8 order-lg-2 order-1">
@@ -71,7 +72,7 @@
                         La manicura es una práctica popular en todo el mundo y puede ser una forma efectiva de mejorar la apariencia de las manos y uñas, además de ser una actividad relajante y agradable.</p>
                     </div>
                 </div>
-                <div class="row align-items-center justify-content-center pb-5">
+                <div class="row align-items-center justify-content-center pb-5"  data-aos="fade-left" data-aos-duration="1000">
                     <div class="col-lg-4 py-5 order-2">
                         <img class="imgIndex" src="./assets/img/Imagen espacio aynails.jpg" title="Imagen espacio AyNails" alt="espacio AyNails">
                     </div>
@@ -154,5 +155,9 @@
             </div>    
         </footer>
         <script src="./js/bootstrap.bundle.min.js" ></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
     </body>
 </html>

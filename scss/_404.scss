@@ -1,0 +1,64 @@
+.error404 {
+    background-image: linear-gradient(to right, #6b041e, #6b041e, #6b041eee, #6b041ee1, #6b041ed2, #781c2bc9, #842e39c9, #903e48cb, #ab6168c4, #c4858bcb, #dda9aec7, #f6cfd3be), url(../assets/img/error404-grande.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 80vh;
+        width: 60%;
+        .h1e404 {
+        font-size: 10rem;
+        font-family: $fuente-principal;
+        color: $color-rosa;
+        }
+        .h2e404 {
+        font-size: 1.5rem;
+        font-family: $fuente-secundaria;
+        color: $color-rosa;
+        padding-top: 1rem;
+        }
+        .boton {
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background-color: $color-rosa;
+            border-radius: 2rem;
+            cursor: pointer;
+            .textoboton {
+                text-decoration: none;
+                font-size: 1.2rem;
+                color: $color-bordo;
+                font-weight:500
+            }
+            &:hover {
+                background-color:#f6cfd3;
+            }
+        }      
+    }
+}
+@media screen and (max-width: 994px) {
+    .error404{
+        background-image: linear-gradient(to right, #6b041e, #6b041e, #6b041eee, #6b041ee1, #6b041ed2, #781c2bc9, #842e39c9, #903e48cb, #ab6168c4, #c4858bcb, #dda9aec7, #f6cfd3be), url(../assets/img/error404-chica.jpg);
+        .contenedor {
+            .h1e404 {
+                font-size: 6rem;
+                }
+            .h2e404 {
+                font-size: 1rem;
+                }
+            .boton{
+                &:hover{
+                    background-color:$color-rosa;
+                }
+            }
+        }
+    }
+}

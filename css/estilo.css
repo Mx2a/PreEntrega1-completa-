@@ -14,8 +14,8 @@
   height: 100vh;
 }
 .backgroundHeaderIndex .navbar-light .logoNav, .backgroundHeaderContacto .navbar-light .logoNav, .backgroundHeaderSobremi .navbar-light .logoNav, .backgroundHeaderGaleria .navbar-light .logoNav, .backgroundHeaderServicios .navbar-light .logoNav {
-  width: 6rem;
-  height: 6rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 4rem;
   transition: transform 0.3s ease;
 }
@@ -209,6 +209,10 @@
   height: 95%;
 }
 
+.contenedorAnimaciones {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 768px) {
   .backgroundMain .h3 {
     font-size: 1.5rem;
@@ -289,6 +293,11 @@
   border: 4px solid #6b041e !important;
 }
 
+@media screen and (max-width: 994px) {
+  .botonForm:hover {
+    background-color: #6b041e;
+  }
+}
 .imgcontenedor .imggaleria {
   background-size: cover;
   background-repeat: no-repeat;
@@ -308,6 +317,67 @@
   height: 47%;
 }
 
+.error404 {
+  background-image: linear-gradient(to right, #6b041e, #6b041e, rgba(107, 4, 30, 0.9333333333), rgba(107, 4, 30, 0.8823529412), rgba(107, 4, 30, 0.8235294118), rgba(120, 28, 43, 0.7882352941), rgba(132, 46, 57, 0.7882352941), rgba(144, 62, 72, 0.7960784314), rgba(171, 97, 104, 0.768627451), rgba(196, 133, 139, 0.7960784314), rgba(221, 169, 174, 0.7803921569), rgba(246, 207, 211, 0.7450980392)), url(../assets/img/error404-grande.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.error404 .contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  width: 60%;
+}
+.error404 .contenedor .h1e404 {
+  font-size: 10rem;
+  font-family: "Dancing Script";
+  color: #FFF2F3;
+}
+.error404 .contenedor .h2e404 {
+  font-size: 1.5rem;
+  font-family: "Poppins";
+  color: #FFF2F3;
+  padding-top: 1rem;
+}
+.error404 .contenedor .boton {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #FFF2F3;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.error404 .contenedor .boton .textoboton {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #6b041e;
+  font-weight: 500;
+}
+.error404 .contenedor .boton:hover {
+  background-color: #f6cfd3;
+}
+
+@media screen and (max-width: 994px) {
+  .error404 {
+    background-image: linear-gradient(to right, #6b041e, #6b041e, rgba(107, 4, 30, 0.9333333333), rgba(107, 4, 30, 0.8823529412), rgba(107, 4, 30, 0.8235294118), rgba(120, 28, 43, 0.7882352941), rgba(132, 46, 57, 0.7882352941), rgba(144, 62, 72, 0.7960784314), rgba(171, 97, 104, 0.768627451), rgba(196, 133, 139, 0.7960784314), rgba(221, 169, 174, 0.7803921569), rgba(246, 207, 211, 0.7450980392)), url(../assets/img/error404-chica.jpg);
+  }
+  .error404 .contenedor .h1e404 {
+    font-size: 6rem;
+  }
+  .error404 .contenedor .h2e404 {
+    font-size: 1rem;
+  }
+  .error404 .contenedor .boton:hover {
+    background-color: #FFF2F3;
+  }
+}
 .backgroundFooter {
   background-color: #6b041e;
   height: auto;

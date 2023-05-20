@@ -29,3 +29,10 @@
 .border {
     border: 4px solid $color-bordo!important;
 }
+@media screen and (max-width: 994px) {
+    .botonForm {
+        &:hover {
+            background-color: $color-bordo;
+        }
+    }
+}

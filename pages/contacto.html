@@ -8,8 +8,9 @@
         <meta name="keywords" content="Manicura, reservas, contacto, atencion personalizada, uñas, diseño de uñas, cuidado de manos, cuidado de uñas, esmaltado de uñas, belleza de manos, esculpido de uñas, tratamiento de cutículas, pedicura, estética.">
         <title> Contacto | AyNails </title>
         <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="../css/estilo.css"">
-        <link rel="icon" href="../favicon.ico">
+        <link rel="icon" href="../assets/img/Logo.jpeg">
         <script src="https://kit.fontawesome.com/b6291c6266.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -17,7 +18,7 @@
             <nav class="navbar navbar-expand-lg navbar-light ">
                 <div class="container-fluid px-5 pt-4">
                     <a class="navbar-brand" href="../index.html" title="Enlace a página - Inicio">
-                        <img class="logoNav" src="../assets/img/Logo.jpeg" title="Logo AyNails" alt="Logo Aynails">
+                        <img class="logoNav" src="../assets/img/Logo1.png" title="Logo AyNails" alt="Logo Aynails">
                     </a>
                     <button class="navbar-toggler menuHamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -58,10 +59,10 @@
         <main class="backgroundMain px-5" id="mainContacto">
             <h2 class="h2main py-5 text-center">Gracias por visitar mi sitio web, no olvides dejar tu consulta o mensaje. ¡Te espero!</h2>
             <hr class="separacion mb-5 mx-5">
-            <div class="container">
+            <div class="container" data-aos="fade-up">
                 <div class="row">
                     <div class="col-lg-6 py-3">
-                        <form>
+                        <form action="../pages/404.html">
                             <div>
                                 <label for="name"></label>
                                 <input class="inputForm" type="text" id="name" name="name" placeholder="Nombre completo" required>
@@ -124,5 +125,9 @@
             </div>    
         </footer>
         <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
     </body>
 </html>
